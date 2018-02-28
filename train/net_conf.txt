@@ -1,0 +1,6 @@
+inference_num_units: 256
+inference_num_layers: 1
+prediction_num_units: 256
+prediction_num_layers: 2
+latent_dim: 10
+regularize_const: 0.5

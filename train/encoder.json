@@ -1,0 +1,62 @@
+{
+    "layer00":{
+	"type": "conv",
+	"recording": false,
+	"param":{
+	        "num_outputs": 128,
+	        "kernel": 5,
+	        "stride": 2,
+	        "batch_norm": false,
+	        "activation": "relu"
+	    }
+    },
+    "layer01":{
+	"type": "conv",
+	"recording": false,
+	"param":{
+	        "num_outputs": 256,
+	        "kernel": 5,
+	        "stride": 2,
+	        "batch_norm": false,
+	        "activation": "relu"
+	    }
+    },
+    "layer02":{
+	"type": "conv",
+	"recording": false,
+	"param":{
+	        "num_outputs": 512,
+	        "kernel": 5,
+	        "stride": 2,
+	        "batch_norm": false,
+	        "activation": "relu"
+	    }
+    },
+    "layer03":{
+	"type": "conv",
+	"recording": false,
+	"param":{
+	        "num_outputs": 1024,
+	        "kernel": 5,
+	        "stride": 2,
+	        "batch_norm": false,
+	        "activation": "relu"
+	    }
+    },
+    "layer04":{
+	"type": "reshape",
+	"recording": false,
+	"param":{
+	        "shape": [16384]
+	    }
+    },
+    "layer05":{
+	"type": "fc",
+	"recording": false,
+	"param":{
+	        "batch_norm": false,
+	        "num_outputs": 128,
+	        "activation": "tanh"
+	    }
+    }
+}

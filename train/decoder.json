@@ -1,0 +1,62 @@
+{
+    "layer00":{
+	"type": "fc",
+	"recording": false,
+	"param":{
+	        "num_outputs": 16384,
+	        "batch_norm": false,
+	        "activation": "relu"
+	    }
+    },
+    "layer01":{
+	"type": "reshape",
+	"recording": false,
+	"param":{
+	        "shape": [4,4,1024]
+	    }
+    },
+    "layer02":{
+	"type": "deconv",
+	"recording": false,
+	"param":{
+	        "num_outputs": 512,
+	        "kernel": 5,
+	        "stride": 2,
+	        "batch_norm": false,
+	        "activation": "relu"
+	    }
+    },
+    "layer03":{
+	"type": "deconv",
+	"recording": false,
+	"param":{
+	        "num_outputs": 256,
+	        "kernel": 5,
+	        "stride": 2,
+	        "batch_norm": false,
+	        "activation": "relu"
+	    }
+    },
+    "layer04":{
+	"type": "deconv",
+	"recording": false,
+	"param":{
+	        "num_outputs": 128,
+	        "kernel": 5,
+	        "stride": 2,
+	        "batch_norm": false,
+	        "activation": "relu"
+	    }
+    },
+    "layer05":{
+	"type": "deconv",
+	"recording": false,
+	"param":{
+	        "num_outputs": 1,
+	        "kernel": 5,
+	        "stride": 2,
+	        "batch_norm": false,
+	        "activation": "sigmoid"
+	    }
+    }
+}

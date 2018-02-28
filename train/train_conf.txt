@@ -1,0 +1,10 @@
+seed: 0
+test: 0
+epoch: 50000
+log_interval: 100
+test_interval: 50
+learning_rate: 0.001
+batchsize: 10
+gpu_use_rate: 0.80
+data_file: ../target/mnist_test_seq.npy
+save_dir: ./checkpoints/model
