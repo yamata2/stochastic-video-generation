@@ -2,7 +2,7 @@
 
 Variational Recurrent Neural Network implemented by Tensorflow
 
-Last updated: Feb. 28th, 2018.
+Last updated: Mar. 1st, 2018.
 Author: Tatsuro Yamada <<ymt2.casino@gmail.com>>
 
 ## Requirements
@@ -11,12 +11,13 @@ Author: Tatsuro Yamada <<ymt2.casino@gmail.com>>
 - NumPy 1.11
 
 ## Implementation
-- The model used in Denton and Fergus, "Stochastic Video Generation with a Learned Prior" <https://sites.google.com/view/svglp/>
+- The model used in Denton and Fergus, "Stochastic Video Generation with a Learned Prior" [blog](https://sites.google.com/view/svglp/)
 
 ## Example
-- $ cd train
-- $ python learn.py
--   (It may take several minutes to download moving MNIST dataset for the first time)
+`$ cd train`
+`$ python ../src/learn.py`
+`  (It may take several minutes to download moving MNIST dataset for the first time)`
+`$ python ../src/generate.py`
 
 ### Following must be taken into consideration
 - Reconstruction error (mse? cross entropy?)
