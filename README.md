@@ -14,10 +14,12 @@ Author: Tatsuro Yamada <<ymt2.casino@gmail.com>>
 - The model used in Denton and Fergus, "Stochastic Video Generation with a Learned Prior" [blog](https://sites.google.com/view/svglp/)
 
 ## Example
-`$ cd train`
-`$ python ../src/learn.py`
-`  (It may take several minutes to download moving MNIST dataset for the first time)`
-`$ python ../src/generate.py`
+```
+$ cd train
+$ python ../src/learn.py
+  (It may take several minutes to download moving MNIST dataset for the first time)
+$ python ../src/generate.py
+```
 
 ### Following must be taken into consideration
 - Reconstruction error (mse? cross entropy?)
